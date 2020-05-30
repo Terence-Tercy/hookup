@@ -1,0 +1,57 @@
+Updates.
+the idea is for the public to post the type of service or product they are looking for and then professionals that have been registered with us can 
+see these jobs on their caterlogs
+>> after the user registers he has to choose a plan next
+>> in the registration form it should have the option where users choose to register as a freelancer or a job provider remember job providers do not 
+have to pay for a plan
+>>it is the job seeker who chooses the freelancer of his taste
+
+the back end part should constitute the following.
+ 1 Database. the name should be = quick_works
+2 submit proposal table(Terms table), post job table sign in table, log in table, = 04 tables
+
+ Freelancer Table{
+
+	-freelancer-id (PK)
+	-firstName
+	-lastName
+	-email
+	-location(FK)
+	-category(FK)
+	-Experience Level
+	}
+Client{
+	-Client-id (PK)
+	-ClientName 
+	-email
+	-Description
+	-location
+	}
+Location{
+	-location-id (PK)
+	-lcationName
+}
+Post a Job{
+	-Job-id (PK)
+	-fname
+	-lastName
+	-nic number
+	-budget
+	-email
+	-jobtype
+	-skill description
+	-project level
+	-experienceLeve
+	-project duration
+	-job title
+	-description
+}
+Category{
+	-cat-id (PK)
+	-catName
+	-dateadded
+}
+login{
+	-email
+	-password
+}
